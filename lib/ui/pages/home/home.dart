@@ -4,6 +4,7 @@ import 'package:go_router/go_router.dart';
 import 'package:jollypodcast/constants.dart';
 import 'package:jollypodcast/models/app_page.dart';
 import 'package:jollypodcast/repo/auth_repository.dart';
+import 'package:jollypodcast/theme/theme.dart';
 
 class HomePage extends StatelessWidget {
   HomePage({Key? key, required this.child}) : super(key: key);
@@ -45,9 +46,9 @@ class HomePage extends StatelessWidget {
 
     return Scaffold(
       key: scaffoldKey,
-      backgroundColor: const Color(0xFF0A1E1E),
+      backgroundColor: AppColors.forestGreen,
       appBar: AppBar(
-        backgroundColor: const Color(0xFF0A1E1E),
+        backgroundColor: AppColors.forestGreen,
         elevation: 0,
         title: Image.asset('assets/images/jolly.png', height: 32),
         actions: [
